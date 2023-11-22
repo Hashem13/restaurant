@@ -62,12 +62,17 @@
     color: rgba(217, 217, 217, 1);
   }
   .footer-line311 {
-    top: 0px;
-    left: 0px;
-    width: 1296px;
+    top: 0%;
+    left: 0%;
+    width: 100%;
     height: 1px;
     position: absolute;
     background-color: rgba(65, 69, 54, 1);
+    /* background-color: aqua; */
+  }
+  .footer-line311 img {
+    width: 100%;
+    height: 100%;
   }
   .footer-top {
     top:30%;
@@ -151,40 +156,7 @@
     align-items: flex-start;
     flex-shrink: 1;
   }
-  .footer-bg1 {
-    top: 0px;
-    left: 0px;
-    width: 35px;
-    height: 35px;
-    position: absolute;
-  }
-  .footer-logotwitter2 {
-    top: 12.423828125px;
-    left: 11.28125px;
-    width: 13.967408180236816px;
-    height: 11.290321350097656px;
-    display: flex;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 1;
-  }
-  .footer-group {
-    top: 0px;
-    left: 0px;
-    width: 13.967408180236816px;
-    height: 11.290321350097656px;
-    display: flex;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 1;
-  }
-  .footer-vector {
-    top: 0px;
-    left: 0px;
-    width: 14px;
-    height: 11px;
-    position: absolute;
-  }
+  
   .footer-frame2 {
     width: 35px;
     height: 35px;
@@ -193,40 +165,7 @@
     align-items: flex-start;
     flex-shrink: 1;
   }
-  .footer-bg2 {
-    top: 0px;
-    left: 0px;
-    width: 35px;
-    height: 35px;
-    position: absolute;
-  }
-  .footer-logofbsimple2 {
-    top: 10.166015625px;
-    left: 13.546875px;
-    width: 7.903224945068359px;
-    height: 15.218616485595703px;
-    display: flex;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 1;
-  }
-  .footer-group1 {
-    top: 0px;
-    left: 0px;
-    width: 7.903224945068359px;
-    height: 15.218616485595703px;
-    display: flex;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 1;
-  }
-  .footer-vector1 {
-    top: 0px;
-    left: 0px;
-    width: 8px;
-    height: 15px;
-    position: absolute;
-  }
+  
   .footer-frame3 {
     width: 35px;
     height: 35px;
@@ -235,54 +174,8 @@
     align-items: flex-start;
     flex-shrink: 1;
   }
-  .footer-bg3 {
-    top: 0px;
-    left: 0px;
-    width: 35px;
-    height: 35px;
-    position: absolute;
-  }
-  .footer-logoinstagram1 {
-    top: 9.0380859375px;
-    left: 9.03125px;
-    width: 16.935482025146484px;
-    height: 16.936290740966797px;
-    display: flex;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 1;
-  }
-  .footer-group2 {
-    top: 0px;
-    left: 0px;
-    width: 16.935482025146484px;
-    height: 16.936290740966797px;
-    display: flex;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 1;
-  }
-  .footer-vector2 {
-    top: 0px;
-    left: 0px;
-    width: 17px;
-    height: 17px;
-    position: absolute;
-  }
-  .footer-vector3 {
-    top: 4.1240234375px;
-    left: 4.1171875px;
-    width: 9px;
-    height: 9px;
-    position: absolute;
-  }
-  .footer-vector4 {
-    top: 2.93359375px;
-    left: 11.984375px;
-    width: 2px;
-    height: 2px;
-    position: absolute;
-  }
+  
+  
   .footer-frame4 {
     width: 35px;
     height: 35px;
@@ -291,40 +184,34 @@
     align-items: flex-start;
     flex-shrink: 1;
   }
-  .footer-bg4 {
-    top: 0px;
-    left: 0px;
+
+  .footer-social {
+    gap: 12px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-frame1,
+.footer-frame2,
+.footer-frame3,
+.footer-frame4 {
     width: 35px;
     height: 35px;
-    position: absolute;
-  }
-  .footer-logogithub1 {
-    top: 9.0380859375px;
-    left: 10.1796875px;
-    width: 16.199739456176758px;
-    height: 15.806449890136719px;
     display: flex;
-    position: absolute;
+    position: relative;
     align-items: flex-start;
     flex-shrink: 1;
-  }
-  .footer-group3 {
-    top: 0px;
-    left: 0px;
-    width: 16.199739456176758px;
-    height: 15.806449890136719px;
-    display: flex;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 1;
-  }
-  .footer-vector5 {
-    top: 0px;
-    left: 0px;
-    width: 16px;
-    height: 16px;
-    position: absolute;
-  }
+    transition: transform 0.3s ease; /* Adding a transition for smoother effect */
+}
+
+/* Apply the hover effect */
+.footer-frame1:hover,
+.footer-frame2:hover,
+.footer-frame3:hover,
+.footer-frame4:hover {
+    transform: scale(1.2); /* Scale the icon on hover */
+}
+  
   .footer-col2 {
     gap: 120px;
     display: flex;
@@ -552,4 +439,28 @@
     position: absolute;
     border-radius: 12px;
   }
-  
+  /* Define a hover animation */
+@keyframes hoverEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply hover animation on hover */
+.footer-img:hover .footer-maskgroup,
+.footer-img:hover .footer-maskgroup1,
+.footer-img:hover .footer-maskgroup2,
+.footer-img:hover .footer-maskgroup3,
+.footer-img:hover .footer-pexelssteve37898851,
+.footer-img:hover .footer-eilivacerond5-pb-kqj0-lu8unsplash1,
+.footer-img:hover .footer-pexelsellaolsson16407721,
+.footer-img:hover .footer-pexelsash3764641 {
+  animation: hoverEffect 0.5s ease-in-out;
+  transform-origin: center;
+}

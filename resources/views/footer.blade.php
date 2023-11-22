@@ -18,7 +18,7 @@
                       <span>Copyright © 2023 Hashtag Developer. All Rights Reserved</span>
                     </span>
                     <img
-                      src="/line3110958-1f59.svg"
+                      src="{{asset('images\footer\Line311.png')}}"
                       alt="Line3110958"
                       class="footer-line311"
                     />
@@ -43,16 +43,16 @@
                       </span>
                       <div class="footer-social">
                         <div class="footer-frame1">
-                          <img src="{{asset('images\footer\1.png')}}" alt="BG0965" class="footer-bg1" />
+                          <a href="#"><img src="{{asset('images\footer\1.png')}}" alt="BG0965" class="footer-bg1" /></a>
                         </div>
                         <div class="footer-frame2">
-                            <img src="{{asset('images\footer\2.png')}}" alt="BG0965" class="footer-bg1" />
+                          <a href="#"> <img src="{{asset('images\footer\2.png')}}" alt="BG0965" class="footer-bg1" /></a>
                         </div>
                         <div class="footer-frame3">
-                            <img src="{{asset('images\footer\3.png')}}" alt="BG0965" class="footer-bg1" />
+                          <a href="#"> <img src="{{asset('images\footer\3.png')}}" alt="BG0965" class="footer-bg1" /></a>
                         </div>
                         <div class="footer-frame4">
-                            <img src="{{asset('images\footer\4.png')}}" alt="BG0965" class="footer-bg1" />
+                          <a href="#"> <img src="{{asset('images\footer\4.png')}}" alt="BG0965" class="footer-bg1" /></a>
                         </div>
                       </div>
                     </div>
@@ -118,32 +118,32 @@
                       </span>
                       <div class="footer-img">
                         <div class="footer-maskgroup">
-                          <img
+                          <a href="#"><img
                             src="{{asset('images\footer\Mask group.png')}}"
                             alt="pexelssteve378988510101"
                             class="footer-pexelssteve37898851"
-                          />
+                          /></a>
                         </div>
                         <div class="footer-maskgroup1">
-                          <img
+                          <a href="#"><img
                             src="{{asset('images\footer\Mask group-1.png')}}"
                             alt="eilivacerond5PbKQJ0Lu8unsplash10101"
                             class="footer-eilivacerond5-pb-kqj0-lu8unsplash1"
-                          />
+                          /></a>
                         </div>
                         <div class="footer-maskgroup2">
-                          <img
+                          <a href="#"><img
                             src="{{asset('images\footer\Mask group-2.png')}}"
                             alt="pexelsellaolsson164077210101"
                             class="footer-pexelsellaolsson16407721"
-                          />
+                          /></a>
                         </div>
                         <div class="footer-maskgroup3">
-                          <img
+                          <a href="#"><img
                             src="{{asset('images\footer\Mask group-3.png')}}"
                             alt="pexelsash37646410102"
                             class="footer-pexelsash3764641"
-                          />
+                          /></a>
                         </div>
                       </div>
                     </div>

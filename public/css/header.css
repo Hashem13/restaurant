@@ -322,6 +322,12 @@ html {
     flex-shrink: 1;
     
   }
+  @media (max-width: 1288px) {
+    .header-button {
+        width: 20%; /* Adjust the width for smaller screens */
+        
+    }
+}
   .header-button1 {
     gap: 10px;
     top: 0px;
