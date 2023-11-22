@@ -1,0 +1,387 @@
+/* Apply a universal reset to remove default margin and padding */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    /* overflow: auto; */
+    /* height: 100vh; */
+    align-items: center;
+    /* flex-direction: column; */
+  }
+  .header-header {
+    gap: 29px;
+    width: 100%;
+    height: 129px;
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  .header-top-bar {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    /* overflow: hidden; */
+    position: absolute;
+    align-items: flex-start;
+    /* flex-shrink: 0; */
+    background-color: rgba(71, 71, 71, 1);
+  }
+  .header-social {
+    gap: 4px;
+    top: 9px;
+    left: 76%;
+    /* width: 20%; */
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+  }
+  .header-frame1 {
+    width: 27px;
+    /* height: 27.171052932739258px; */
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    /* flex-shrink: 1; */
+  }
+  
+  .header-frame2 {
+    width: 27px;
+    /* height: 27.171052932739258px; */
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .header-frame3 {
+    width: 27px;
+    height: 27.171052932739258px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  
+  .header-frame4 {
+    width: 27px;
+    height: 27.171052932739258px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+
+  .header-info {
+    gap: 25px;
+    top: 11px;
+    left: 10%;
+    width: 344px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+  }
+  .header-call {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+  }
+  .header-icon-outlinephone {
+    width: 18px;
+    height: 18px;
+  }
+  .header-text {
+    color: var(--dl-color-neutral-02);
+    height: auto;
+    text-align: left;
+    line-height: 24px;
+  }
+  .header-mail {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+  }
+  .header-icon-outlinemail {
+    width: 18px;
+    height: 18px;
+  }
+  .header-text02 {
+    color: var(--dl-color-neutral-02);
+    height: auto;
+    text-align: left;
+    line-height: 24px;
+  }
+  .header-frame21 {
+    top: 45%;
+    left: 10%;
+    width: 66.5%;
+    height: 55px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    /* background-color: aqua; */
+    
+  }
+  .header-header1 {
+    gap: 251px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: space-between;
+    /* background-color: black; */
+    
+  }
+  .header-logo {
+    top: 0px;
+    left: 0px;
+    width: 42.5%;
+    height: 55px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    
+  }
+  .header-japanesefood {
+    top: 0px;
+    left: 0px;
+    width: 56px;
+    height: 55px;
+    position: absolute;
+  }
+  .header-original-logo {
+    top: 8px;
+    left: 5%;
+    width: 50%;
+    height: 38.66666793823242px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    
+  }
+  .header-text04 {
+    top: 4px;
+    left: 42px;
+    color: rgba(71, 71, 71, 1);
+    height: auto;
+    position: absolute;
+    font-size: 42.66666793823242px;
+    font-style: italic;
+    text-align: left;
+    font-family: Playfair Display;
+    font-weight: 600;
+    line-height: 29.33333396911621px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .header-menu {
+    top: 11.5px;
+    left: 40%;
+    width: 33%;
+    height: 32px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    /* background-color: aquamarine; */
+  }
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .header-menu {
+        left: 30%;
+        width: 70%;
+        max-width: 600px; /* Adjust max-width as needed */
+      }
+  }
+  @media (max-width: 768px){
+    .header-frame21{
+        left: 0;
+    }
+    .header-menu {
+        left: 40%;
+        width: 40%;
+        max-width: 600px; /* Adjust max-width as needed */
+      }
+  }
+  .header-menu a{
+    text-decoration:none;
+    color:rgba(44, 47, 36, 1) ;
+
+    text-align: left;
+    font-family:sans-serif;
+    font-weight:bold;
+    line-height: 29.33333396911621px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .header-menu1 {
+    gap: 10px;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    padding: 4px 16px;
+    position: absolute;
+    align-items: center;
+    border-radius: 34px;
+    justify-content: center;
+    background-color: rgba(219, 223, 208, 1);
+  }
+  .header-text06 {
+    color: var(--dl-color-neutral-07);
+    height: auto;
+    text-align: left;
+    line-height: 24px;
+  }
+  .header-menu2 {
+    gap: 10px;
+    top: 0px;
+    left: 85px;
+    display: flex;
+    padding: 4px 16px;
+    position: absolute;
+    align-items: center;
+    border-radius: 34px;
+    justify-content: center;
+  }
+  .header-text08 {
+    color: var(--dl-color-neutral-07);
+    height: auto;
+    text-align: left;
+    line-height: 24px;
+  }
+  .header-menu3 {
+    gap: 10px;
+    top: 0px;
+    left: 172px;
+    display: flex;
+    padding: 4px 16px;
+    position: absolute;
+    align-items: center;
+    border-radius: 34px;
+    justify-content: center;
+  }
+  .header-text10 {
+    color: var(--dl-color-neutral-07);
+    height: auto;
+    text-align: left;
+    line-height: 24px;
+  }
+  .header-menu4 {
+    gap: 10px;
+    top: 0px;
+    left: 255px;
+    display: flex;
+    padding: 4px 16px;
+    position: absolute;
+    align-items: center;
+    border-radius: 34px;
+    justify-content: center;
+  }
+  .header-text12 {
+    color: var(--dl-color-neutral-07);
+    height: auto;
+    text-align: left;
+    line-height: 24px;
+  }
+  .header-menu5 {
+    gap: 10px;
+    top: 0px;
+    left: 339px;
+    display: flex;
+    padding: 4px 16px;
+    position: absolute;
+    align-items: center;
+    border-radius: 34px;
+    justify-content: center;
+  }
+  .header-text14 {
+    /* color: var(--dl-color-neutral-07); */
+    height: auto;
+    text-align: left;
+    line-height: 24px;
+  }
+  .header-button {
+    top: 10%;
+    left: 92.5%;
+    width: 15%;
+    height: 48px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    
+  }
+  .header-button1 {
+    gap: 10px;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    padding: 12px 24px;
+    position: absolute;
+    align-items: center;
+    border-color: rgba(43, 46, 35, 1);
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 118px;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+    /* background-color: aqua; */
+  }
+  .header-button1:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+  .header-text16 {
+    /* color: var(--dl-color-neutral-07); */
+    height: auto;
+    text-align: right;
+    line-height: 24px;
+  }
+  /* Add this CSS to your stylesheet */
+.header-menu a {
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease-in-out; /* Transition color for smooth effect */
+}
+
+.header-menu a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000; /* Set the color of the underline */
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s; /* Transition for the underline effect */
+}
+
+.header-menu a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+  /* Add this CSS to your stylesheet */
+.header-frame1,
+.header-frame2,
+.header-frame3,
+.header-frame4 {
+    transition: transform 0.3s ease-in-out;
+}
+
+.header-frame1:hover,
+.header-frame2:hover,
+.header-frame3:hover,
+.header-frame4:hover {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+}
