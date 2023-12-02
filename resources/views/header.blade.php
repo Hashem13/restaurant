@@ -87,7 +87,7 @@
                   </div>
                 </div>
                 <div class="header-button">
-                  <a href="{{ URL('about') }}"><button class="header-button1">
+                  <a href="{{ URL('booking') }}"><button class="header-button1">
                     <span class="header-text16 Body16pxBold">
                       <span>Book A Table</span>
                     </span>

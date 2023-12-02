@@ -6,12 +6,15 @@ html {
 }
 
 .header-container {
+    top: 0px;
     width: 100%;
     display: flex;
     /* overflow: auto; */
     /* height: 100vh; */
     align-items: center;
     /* flex-direction: column; */
+    position: fixed;
+    z-index: 1;background-color: rgb(255, 255, 255);
   }
   .header-header {
     gap: 29px;
@@ -87,7 +90,11 @@ html {
     align-items: flex-start;
   }
   .header-call {
+    
     gap: 8px;
+    color: var(--neutral-02, #F9F9F7);
+/* Body/16px/Regular */
+    font-family: DM Sans;
     display: flex;
     align-items: center;
   }
@@ -102,6 +109,9 @@ html {
     line-height: 24px;
   }
   .header-mail {
+    color: var(--neutral-02, #F9F9F7);
+/* Body/16px/Regular */
+    font-family: DM Sans;
     gap: 8px;
     display: flex;
     align-items: center;
