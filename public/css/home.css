@@ -144,14 +144,14 @@ html {
   }
   
   .hero-button {
-    gap: 10px;
     display: flex;
     padding: 20px 32px;
-    align-items: center;
-    border-radius: 118px;
     justify-content: center;
-    background-color: rgba(173, 52, 62, 1);
-    transition: transform 0.3s ease-in-out;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 118px;
+    background: #AD343E;
   }
   .hero-text08 {
     color: var(--neutral-01, #FFF);

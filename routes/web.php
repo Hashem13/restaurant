@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BookingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,4 +26,7 @@ Route::get('/menu', function () {
 Route::get('/booking', function () {
     return view('booking');
 });
+
+
+Route::post('/book-table', [BookingController::class, 'bookTable'])->name('book.table');
 
