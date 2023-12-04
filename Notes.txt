@@ -1,0 +1,12 @@
+- Menu Schema:
+    id
+    name
+    category
+    price
+    description
+    image_path
+    is_house_special
+    created_at
+    created_by
+    is_availible
+    
