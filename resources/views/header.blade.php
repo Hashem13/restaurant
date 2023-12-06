@@ -23,6 +23,14 @@
                 <div class="header-frame4">
                     <a href="#"> <img src="{{asset('images\header\top-bar\4.png')}}" alt="BG8197" class="header-bg3" /></a>
                 </div>
+                {{-- <div class="links-container">
+                  <div class="register-link">
+                      <a href="{{ route('register.create') }}">Register</a>
+                  </div>
+                  <div class="login-link">
+                      <a href="{{ route('login') }}">Login</a>
+                  </div> --}}
+              </div>
               </div>
               <div class="header-info">
                 <div class="header-call">
@@ -93,6 +101,13 @@
                     </span>
                   </button></a>
                 </div>
+                <div class="links-container">
+                  <div class="register-link">
+                      <a href="{{ route('register.create') }}">Register</a>
+                  </div>
+                  <div class="login-link">
+                      <a href="{{ route('login') }}">Login</a>
+                  </div>
               </div>
             </div>
           </div>

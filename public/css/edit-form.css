@@ -1,0 +1,80 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 2000px; */
+  }
+.hero-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2; /* Background color */
+    position: relative;
+  }
+
+  .hero-hero {
+    width: 83%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background-color: rgba(248, 248, 246, 1);
+  }
+  .hero-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+  }
+  
+  /* Style for the form inputs */
+  input[type="date"],
+  input[type="email"],
+  input[type="text"]{
+    width: calc(50% - 10px); /* Adjust input width */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+  }
+  .hero-button {
+    display: flex;
+        padding: 20px 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        border-radius: 118px;
+        background: #AD343E;
+            width: 100%;
+            color: var(--neutral-01, #FFF);
+        text-align: right;
+        /* Body/16px/Bold */
+        font-family: DM Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 150% */
+  }
+  
+  /* Hover effect for the submit button */
+  .hero-button:hover {
+    background-color: #8c2f36;
+  }
