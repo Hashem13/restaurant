@@ -5,6 +5,7 @@ use App\Http\Controllers\BookingController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\MenuController;
 
 
 
@@ -26,8 +27,8 @@ Route::get('/about', function () {
     return view('about');
 });
 Route::get('/menu', function () {
-    return view('menu');
-});
+    return view('menu'); 
+})->name('menu');
 // Route::get('/booking', function () {
 //     return view('booking');
 // });
@@ -60,3 +61,10 @@ Route::put('/profile/{id}', [ProfileController::class, 'update'])->name('profile
 
 
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+
+
+
+Route::get('/menu', [MenuController::class, 'index'])->name('menu.index');
+Route::put('/menu/{id}', [MenuController::class, 'update'])->name('menu.update');
+Route::delete('/menu/{id}', [MenuController::class, 'destroy'])->name('menu.destroy');
+Route::post('/menu', [MenuController::class, 'store'])->name('menu.store');

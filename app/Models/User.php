@@ -14,5 +14,8 @@ class User extends Authenticatable
         'fullname', 'email', 'password', 'address', 'phone', 'birthdate', 'is_admin',
     ];
 
-    // ...
+    public function isAdmin()
+    {
+        return $this->is_admin === 1; // Assuming 1 means the user is an admin
+    }
 }
