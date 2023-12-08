@@ -9,6 +9,7 @@ class BookingController extends Controller
 {
     public function bookTable(Request $request)
     {
+    try {
         // Validate the incoming request data
         $validatedData = $request->validate([
             'date' => 'required|date',
@@ -28,6 +29,14 @@ class BookingController extends Controller
         $booking->save();
 
         // Redirect back to the same view with a success message
+        // Redirect back to the same view with a success message
         return redirect()->back()->with('success', 'Table booked successfully!');
+        } catch (ValidationException $e) {
+            // Validation errors occurred, redirect back with errors
+            return redirect()->back()->withErrors($e->errors())->withInput();
+        } catch (\Exception $e) {
+            // Other errors occurred, redirect back with a generic error message
+        return redirect()->back()->with('error', 'Failed to book the table. Please try again.');
+        }
     }
 }

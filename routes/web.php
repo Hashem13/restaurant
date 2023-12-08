@@ -28,14 +28,20 @@ Route::get('/about', function () {
 Route::get('/menu', function () {
     return view('menu');
 });
-Route::get('/booking', function () {
-    return view('booking');
-});
+// Route::get('/booking', function () {
+//     return view('booking');
+// });
 Route::get('/registration', function () {
     return view('registration');
 });
 
+Route::get('/booking', function () {
+    return view('booking');
+})->middleware('auth');
 Route::post('/book-table', [BookingController::class, 'bookTable'])->name('book.table');
+
+
+
 
 Route::get('/register', [UserController::class, 'create'])->name('register.create');
 Route::post('/register', [UserController::class, 'store'])->name('register.store');

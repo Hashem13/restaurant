@@ -11,6 +11,7 @@
     @extends('layout')
 
     @section('content')
+    @auth
     <div class="hero-container">
         <div class="hero-hero">
             <div class="hero-title">
@@ -22,6 +23,11 @@
                 </span>
             </div>
             <div class="hero-form">
+                @if (session('error'))
+    <div class="alert alert-danger">
+        {{ session('error') }}
+    </div>
+@endif
                 <form method="POST" action="{{ route('book.table') }}">
                     @csrf
                     <div class="hero-content">
@@ -89,7 +95,9 @@
         </div>
     </div>
     
-      
+    @else
+    <p>You need to be logged in to access this page.</p>
+    @endauth
     @endsection
 </body>
 </html>

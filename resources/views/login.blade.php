@@ -10,11 +10,17 @@
 <body>
     @extends('layout')
     @section('content')
+    
     <div class="hero-container">
         <div class="reg_form">
             <form method="POST" action="{{ route('login') }}">
                 @csrf
                 <h2>Login</h2>
+                @if (session('error'))
+                    <div class="alert alert-danger">
+                        {{ session('error') }}
+                    </div>
+                @endif
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="password" placeholder="Password" required>
                 <input type="submit" value="Login">
