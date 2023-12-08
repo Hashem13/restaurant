@@ -24,10 +24,10 @@
             </div>
             <div class="hero-form">
                 @if (session('error'))
-    <div class="alert alert-danger">
-        {{ session('error') }}
-    </div>
-@endif
+                    <div class="alert alert-danger">
+                        {{ session('error') }}
+                    </div>
+                @endif
                 <form method="POST" action="{{ route('book.table') }}">
                     @csrf
                     <div class="hero-content">
