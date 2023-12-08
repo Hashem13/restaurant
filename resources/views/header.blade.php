@@ -23,6 +23,7 @@
                 <div class="header-frame4">
                     <a href="#"> <img src="{{asset('images\header\top-bar\4.png')}}" alt="BG8197" class="header-bg3" /></a>
                 </div>
+                
                 {{-- <div class="links-container">
                   <div class="register-link">
                       <a href="{{ route('register.create') }}">Register</a>
@@ -30,7 +31,9 @@
                   <div class="login-link">
                       <a href="{{ route('login') }}">Login</a>
                   </div> --}}
+                  
               </div>
+              <div class="logout-profile"><a href="{{ route('profile.show') }}">profile</a>|<a href="{{ route('logout') }}">Logout</a></div>
               </div>
               <div class="header-info">
                 <div class="header-call">
@@ -54,6 +57,7 @@
                   </span>
                 </div>
               </div>
+              
             </div>
             <div class="header-frame21">
               <div class="header-header1">

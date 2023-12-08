@@ -59,3 +59,4 @@ Route::get('/profile/edit/{id}', [ProfileController::class, 'edit'])->name('prof
 Route::put('/profile/{id}', [ProfileController::class, 'update'])->name('profile.update');
 
 
+Route::get('/logout', [AuthController::class, 'logout'])->name('logout');

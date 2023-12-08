@@ -429,3 +429,11 @@ html {
 .login-link:hover {
   background-color: #8c2f36;
 }
+.logout-profile{
+  position: absolute;
+  right: 20px;
+  text-decoration: none;
+}
+.logout-profile a{
+  color: #ccc;
+}

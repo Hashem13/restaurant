@@ -23,6 +23,11 @@ class AuthController extends Controller
     // Authentication failed
     return back()->withInput($request->only('email'))
                  ->with('error', 'Invalid credentials. Please try again.');
-    }   
+}
+public function logout()
+{
+    auth()->logout();
+    return redirect('/'); // Redirect to a specific route after logout
+}   
 
 }
