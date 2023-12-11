@@ -41,9 +41,9 @@
               
               <div class="menu-links">
                 <a href="{{ route('profile.show') }}">Profile</a>
-                <a href="{{ route('logout') }}">Logout</a>
-                <a href="{{ route('admin.panel') }}">Admin Panel</a>
                 <a href="{{ route('myBookings') }}">My Bookings</a>
+                <a href="{{ route('admin.panel') }}">Admin Panel</a>
+                <a href="{{ route('logout') }}">Logout</a>
               </div>
               </div>
               <div class="header-info">
