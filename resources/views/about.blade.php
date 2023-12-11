@@ -11,8 +11,7 @@
     @extends('layout')
 
     @section('content')
-        Tenetur distinctio perferendis ducimus. Maxime, iste, aliquid vero sapiente, laborum dolorum pariatur voluptatem iure temporibus ab dignissimos cupiditate beatae rem est accusantium aspernatur deserunt fugit. Adipisci minus consectetur ullam nobis!
-        
+    
     @endsection
 </body>
 </html>
