@@ -9,11 +9,12 @@ class Booking extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['date', 'time', 'name', 'phone', 'total_person'];
-
-    // If you have a different table name or primary key
-    // protected $table = 'bookings';
-    // protected $primaryKey = 'id';
+    protected $fillable = ['date', 'time', 'name', 'phone', 'total_person', 'isApproved', 'created_by'];
 
     // Define any relationships or additional logic here if needed
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'created_by');
+    }
 }

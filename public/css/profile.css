@@ -41,23 +41,15 @@ body {
     margin: auto;
   }
   .hero-button {
-    display: flex;
-        padding: 20px 32px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        align-self: stretch;
-        border-radius: 118px;
-        background: #AD343E;
-            width: 100%;
-            color: var(--neutral-01, #FFF);
-        text-align: right;
-        /* Body/16px/Bold */
-        font-family: DM Sans;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 24px; /* 150% */
+    background-color: #AD343E;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
   }
   
   /* Hover effect for the submit button */

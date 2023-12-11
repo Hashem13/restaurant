@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Booking;
+use Illuminate\Validation\ValidationException;
 
 class BookingController extends Controller
 {
@@ -43,5 +44,13 @@ class BookingController extends Controller
             // Other errors occurred, redirect back with a generic error message
             return redirect()->back()->with('error', 'Failed to book the table. Please try again.');
         }
+    }
+    public function myBookings()
+    {
+        // Retrieve bookings associated with the logged-in user
+        $user = Auth::user();
+        $bookings = $user->bookings;
+
+        return view('myBookings', compact('bookings'));
     }
 }

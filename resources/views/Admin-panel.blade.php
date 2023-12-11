@@ -1,1 +1,0 @@
-<h1>admins only</h1>
