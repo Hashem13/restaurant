@@ -33,7 +33,18 @@
                   </div> --}}
                   
               </div>
-              <div class="logout-profile"><a href="{{ route('profile.show') }}">profile</a> | <a href="{{ route('logout') }}">Logout</a> | <a href="{{ route('admin.panel') }}">Admin Panel</a> | <a href="{{ route('myBookings') }}">My Bookings</a></div>
+              <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              
+              <div class="menu-links">
+                <a href="{{ route('profile.show') }}">Profile</a>
+                <a href="{{ route('logout') }}">Logout</a>
+                <a href="{{ route('admin.panel') }}">Admin Panel</a>
+                <a href="{{ route('myBookings') }}">My Bookings</a>
+              </div>
               </div>
               <div class="header-info">
                 <div class="header-call">
@@ -117,6 +128,10 @@
           </div>
         </div>
       </div>
-      
+      <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+          this.classList.toggle('active');
+        });
+      </script>
 </body>
 </html>
