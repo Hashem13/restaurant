@@ -6,6 +6,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\AdminController;
 
 
 
@@ -21,8 +22,8 @@ use App\Http\Controllers\MenuController;
 */
 
 Route::get('/', function () {
-    return view('home');
-});
+    return view('home'); // Replace 'welcome' with the name of your home view
+})->name('home');
 Route::get('/about', function () {
     return view('about');
 });
@@ -71,3 +72,8 @@ Route::post('/menu', [MenuController::class, 'store'])->name('menu.store');
 
 
 Route::get('/my-bookings', [BookingController::class, 'myBookings'])->name('myBookings');
+
+Route::get('/admin-panel', [AdminController::class, 'index'])->name('admin.panel');
+Route::post('/admin/upgrade/{id}', [AdminController::class, 'upgradeUser'])->name('admin.upgrade');
+Route::post('/admin/accept-booking/{id}', [AdminController::class, 'acceptBooking'])->name('admin.accept');
+Route::post('/admin/decline-booking/{id}', [AdminController::class, 'declineBooking'])->name('admin.decline');
