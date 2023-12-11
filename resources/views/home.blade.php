@@ -59,7 +59,7 @@
       </div>
 
       {{-- Menu Html --}}
-      <div>
+      
 
         <div class="menu-container">
           <div class="menu-menu">
@@ -95,7 +95,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="menu-frame2">
+                <div class="menu-frame1">
                   <div class="menu-text08">
                     <div class="menu-icon1">
                       {{-- <img alt="Ellipse420123" src="{{asset('images\home\menu\icon.png')}}" class="menu-ellipse421" /> --}}
@@ -123,7 +123,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="menu-frame3">
+                <div class="menu-frame1">
                   <div class="menu-text16">
                     <div class="menu-icon2">
                       {{-- <img alt="Ellipse420124" src="." class="menu-ellipse422" /> --}}
@@ -149,7 +149,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="menu-frame4">
+                <div class="menu-frame1">
                   <div class="menu-text24">
                     <div class="menu-icon3">
                       <img alt="Ellipse420125" src="." class="menu-ellipse423" />
@@ -188,7 +188,7 @@
             </div>
           </div>
         </div>
-      </div>
+      
       
 
     @endsection
