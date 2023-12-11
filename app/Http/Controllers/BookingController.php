@@ -46,11 +46,17 @@ class BookingController extends Controller
         }
     }
     public function myBookings()
-    {
+{
+    // Check if the user is authenticated
+    if (Auth::check()) {
         // Retrieve bookings associated with the logged-in user
         $user = Auth::user();
         $bookings = $user->bookings;
 
         return view('myBookings', compact('bookings'));
+    } else {
+        // User is not logged in, redirect to the login page
+        return redirect()->route('login')->with('error', 'Please log in to view your bookings.');
     }
+}
 }

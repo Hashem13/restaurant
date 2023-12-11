@@ -431,8 +431,9 @@ html {
 }
 .logout-profile{
   position: absolute;
-  right: 20px;
+  right: 0px;
   text-decoration: none;
+  max-width: 170px;
 }
 .logout-profile a{
   color: #ccc;

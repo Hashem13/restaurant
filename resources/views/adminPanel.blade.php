@@ -90,7 +90,7 @@
             </div>
         </div>
     </div>
-  
+  <span class="link"> If You want to access the the edit/delete/add item in the menu its embedded in the menu blade -> <a href="{{ route('menu.index') }}">click me</a></span>
 @endsection
 
 </body>

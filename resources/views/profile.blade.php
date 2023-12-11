@@ -22,6 +22,7 @@
             <p>Phone No.: {{ $user->phone }}</p>
             <p>Birthdate: {{ $user->birthdate }}</p>
             <a href="{{ route('profile.edit', $user->id) }}"><button class="hero-button">Edit Profile</button></a>
+            <a href="{{ URL('booking') }}"><button class="hero-button">Book A Table</button></a>
             <a href="{{ route('myBookings') }}"><button class="hero-button">My Bookings</button></a>
         </div>
     </div>

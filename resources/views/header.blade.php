@@ -33,7 +33,7 @@
                   </div> --}}
                   
               </div>
-              <div class="logout-profile"><a href="{{ route('profile.show') }}">profile</a>|<a href="{{ route('logout') }}">Logout</a></div>
+              <div class="logout-profile"><a href="{{ route('profile.show') }}">profile</a> | <a href="{{ route('logout') }}">Logout</a> | <a href="{{ route('admin.panel') }}">Admin Panel</a> | <a href="{{ route('myBookings') }}">My Bookings</a></div>
               </div>
               <div class="header-info">
                 <div class="header-call">

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>User Registration</title>
+  <title>Registration</title>
   <link rel="stylesheet" href="{{ asset('css/registration.css') }}">
 </head>
 <body>
