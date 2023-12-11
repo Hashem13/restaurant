@@ -207,19 +207,21 @@ html {
     flex-shrink: 1;
     /* background-color: aquamarine; */
   }
-  @media (min-width: 768px) and (max-width: 1200px) {
+  /* @media (min-width: 768px) and (max-width: 1200px) {
     .header-menu {
         left: 30%;
         width: 70%;
-        max-width: 600px; /* Adjust max-width as needed */
+        max-width: 600px; 
       }
-  }
-  @media (max-width: 768px){
+  } */
+  @media (max-width: 1122px){
     .header-frame21{
         left: 0;
     }
+    
+    
     .header-menu {
-        left: 40%;
+        left: 45%;
         width: 40%;
         max-width: 600px; /* Adjust max-width as needed */
       }
@@ -334,14 +336,16 @@ html {
   }
   @media (max-width: 1288px) {
     .header-button {
-        width: 20%; /* Adjust the width for smaller screens */
-        
+        width: 20%; 
+        border-radius: 12px;
+        left: 93%;
     }
 }
+
   .header-button1 {
     gap: 10px;
     top: 0px;
-    left: 0px;
+    left: -0px;
     display: flex;
     padding: 12px 24px;
     position: absolute;
@@ -353,6 +357,13 @@ html {
     justify-content: center;
     transition: transform 0.3s ease-in-out;
     /* background-color: aqua; */
+  }
+  @media (max-width: 970px) {
+    .header-button1 {
+      width: 110%;  
+      border-radius: 118px;
+        left: -0%;
+    }
   }
   .header-button1:hover {
     transform: scale(1.1); /* Scale effect on hover */
@@ -406,7 +417,7 @@ html {
   justify-content: space-between;
   width: 200px;
   position: absolute;
-  left :110%;
+  left :115%;
 }
 
 .register-link,
@@ -461,11 +472,18 @@ html {
 }
 
 .menu-links a {
-  display: block;
-  padding: 8px 16px;
-  text-decoration: none;
-  color: #AD343E;
-  font-size: 18px;
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: white;
+    color:rgba(44, 47, 36, 1) ;
+    text-align: left;
+    font-family:sans-serif;
+    font-weight:bold;
+    line-height: 29.33333396911621px;
+    font-stretch: normal;
+    text-decoration: none;
 }
 
 /* Display menu-links when menu-toggle is clicked */
@@ -483,4 +501,65 @@ html {
 
 .active + .menu-links {
   display: block;
+}
+.hamburger-menu {
+  display: none;
+  position: relative;
+  left: 27%;
+}
+
+/* Styles for the hamburger icon */
+.hamburger-icon {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Styles for the hamburger icon spans */
+.hamburger-icon span {
+  display: block;
+  height: 3px;
+  width: 25px;
+  background-color: #333;
+  margin: 5px 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1200px) {
+  .header-menu {
+    display: none; /* Hide the main menu on smaller screens */
+  }
+  .header-button {
+    width: 20%; 
+    border-radius: 12px;
+    left: 90%;
+}
+
+  .hamburger-menu {
+    display: block; /* Show the hamburger menu */
+  }
+
+  /* Additional styles for the mobile menu */
+  .mobile-menu {
+    display: none;
+    padding: 10px;
+    /* background-color: #f9f9f9; */
+  }
+  .mobile-menu a{
+    text-decoration:none;
+    color:rgba(44, 47, 36, 1) ;
+
+    text-align: left;
+    font-family:sans-serif;
+    font-weight:bold;
+    line-height: 29.33333396911621px;
+    font-stretch: normal;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+
+  /* Show the mobile menu when hamburger icon is clicked */
+  .hamburger-menu.active .mobile-menu {
+    display: block;
+  }
 }

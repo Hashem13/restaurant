@@ -109,6 +109,25 @@
                     </span>
                   </div>
                 </div>
+                <div class="hamburger-menu">
+                  <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="mobile-menu">
+                    
+                    <a href="{{url('/')}}">Home</a>
+                    <a href="{{url('about')}}">About</a>
+                    <a href="{{url('menu')}}">Menu</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Contact</a>   
+                    
+                        
+                  </div>
+                  </div>
+                </div>
+                
                 <div class="header-button">
                   <a href="{{ URL('booking') }}"><button class="header-button1">
                     <span class="header-text16 Body16pxBold">
@@ -131,6 +150,14 @@
       <script>
         document.querySelector('.menu-toggle').addEventListener('click', function() {
           this.classList.toggle('active');
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+          const hamburgerMenu = document.querySelector('.hamburger-menu');
+          const hamburgerIcon = document.querySelector('.hamburger-icon');
+
+          hamburgerIcon.addEventListener('click', function() {
+            hamburgerMenu.classList.toggle('active');
+          });
         });
       </script>
 </body>
