@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::table('bookings', function (Blueprint $table) {
             $table->tinyInteger('isApproved')->default(0); // 0: pending, 1: approved, 2: declined
-            $table->unsignedBigInteger('created_by')->nullable(); // Reference to user ID
+            $table->unsignedBigInteger('created_by')->nullable(); 
         });
     }
 

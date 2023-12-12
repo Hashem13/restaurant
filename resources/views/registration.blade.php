@@ -23,7 +23,6 @@
         <label for="birthdate">Birthdate:</label>
         <input type="date" name="birthdate" required>
         <input type="submit" value="Register">
-        {{-- <a href="{{ route('register.create') }}">Register</a> --}}
       </form>
     </div>
   </div>

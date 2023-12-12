@@ -8,7 +8,6 @@
     <title>My Bookings</title>
 </head>
 <body>
-    <!-- myBookings.blade.php -->
 @extends('layout')
 
 @section('content')

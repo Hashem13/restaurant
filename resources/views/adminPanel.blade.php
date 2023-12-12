@@ -8,14 +8,14 @@
     <title>Admin Panel</title>
 </head>
 <body>
-    <!-- adminPanel.blade.php -->
+    
 
 @extends('layout')
 
 @section('content')
-      <!-- Display admin panel content here -->
+      
     <h1>Welcome to Admin Panel</h1>
-      <!-- Table to display users -->
+      
     <div class="hero-container">
         <div class="hero-hero">
             <div class="hero-form">
@@ -28,13 +28,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- Loop through users to display their info -->
+                        
                         @foreach($users as $user)
                             <tr>
                                 <td>{{ $user->fullname }}</td>
                                 <td>{{ $user->email }}</td>
                                 <td>
-                                    <!-- Button to upgrade user to admin -->
+                                    
                                     <form action="{{ route('admin.upgrade', $user->id) }}" method="POST">
                                         @csrf
                                         <button type="submit">Upgrade to Admin</button>
@@ -48,7 +48,7 @@
         </div>
     </div>
   
-      <!-- Table to display booking requests -->
+      
     <div class="hero-container">
         <div class="hero-hero">
             <div class="hero-form">
@@ -64,7 +64,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- Loop through booking requests to display -->
+                        
                         @foreach($bookingRequests as $booking)
                             <tr>
                                 <td>{{ $booking->date }}</td>
@@ -73,7 +73,7 @@
                                 <td>{{ $booking->phone }}</td>
                                 <td>{{ $booking->total_person }}</td>
                                 <td>
-                                    <!-- Buttons to accept or decline booking -->
+                                    
                                     <form action="{{ route('admin.accept', $booking->id) }}" method="POST">
                                         @csrf
                                         <button type="submit">Accept</button>

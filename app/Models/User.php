@@ -17,7 +17,7 @@ class User extends Authenticatable
 
     public function isAdmin()
     {
-        return $this->is_admin === 1; // Assuming 1 means the user is an admin
+        return $this->is_admin === 1; 
     }
 
     public function bookings()

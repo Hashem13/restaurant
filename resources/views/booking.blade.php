@@ -32,7 +32,7 @@
                     @csrf
                     <div class="hero-content">
                         <div class="hero-box">
-                            <!-- Date -->
+                            
                             <div class="hero-row">
                                 <div class="hero-frame1">
                                     <div class="hero-title1">
@@ -42,7 +42,7 @@
                                     </div>
                                     <input type="date" name="date">
                                 </div>
-                                <!-- Time -->
+                                
                                 <div class="hero-frame2">
                                     <div class="hero-title2">
                                         <span class="hero-text08 Body16pxBold">
@@ -52,7 +52,7 @@
                                     <input type="time" name="time">
                                 </div>
                             </div>
-                            <!-- Name and Phone -->
+                            
                             <div class="hero-row1">
                                 <div class="hero-frame11">
                                     <div class="hero-title3">
@@ -71,7 +71,7 @@
                                     <input type="tel" name="phone" placeholder="x-xxx-xxx-xxxx">
                                 </div>
                             </div>
-                            <!-- Total Person -->
+                            
                             <div class="hero-row2">
                                 <div class="hero-frame12">
                                     <div class="hero-title5">
@@ -82,7 +82,7 @@
                                     <input type="number" name="total_person" value="1">
                                 </div>
                             </div>
-                            <!-- Submit Button -->
+                            
                             <button type="submit" class="hero-button">
                                 <span class="hero-text24 Body16pxBold">
                                     <span>Book A Table</span>

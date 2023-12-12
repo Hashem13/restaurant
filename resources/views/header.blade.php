@@ -2,7 +2,7 @@
 <html>
 <head>
     
-    <!-- Include CSS styles or link to external CSS files here -->
+    
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
 </head>
 <body>
@@ -24,13 +24,6 @@
                     <a href="#"> <img src="{{asset('images\header\top-bar\4.png')}}" alt="BG8197" class="header-bg3" /></a>
                 </div>
                 
-                {{-- <div class="links-container">
-                  <div class="register-link">
-                      <a href="{{ route('register.create') }}">Register</a>
-                  </div>
-                  <div class="login-link">
-                      <a href="{{ route('login') }}">Login</a>
-                  </div> --}}
                   
               </div>
               <div class="menu-toggle">

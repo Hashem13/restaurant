@@ -8,7 +8,7 @@ class AuthController extends Controller
 {
     public function showLoginForm()
     {
-        return view('login'); // Replace 'auth.login' with your actual login view path
+        return view('login'); 
     }
 
     public function login(Request $request)
@@ -16,18 +16,18 @@ class AuthController extends Controller
     $credentials = $request->only('email', 'password');
 
     if (auth()->attempt($credentials)) {
-        // Authentication passed
-        return redirect()->route('profile.show'); // Redirect to the profile route
+        
+        return redirect()->route('profile.show'); 
     }
 
-    // Authentication failed
+    
     return back()->withInput($request->only('email'))
                  ->with('error', 'Invalid credentials. Please try again.');
 }
 public function logout()
 {
     auth()->logout();
-    return redirect('/'); // Redirect to a specific route after logout
+    return redirect('/'); 
 }   
 
 }

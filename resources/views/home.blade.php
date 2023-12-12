@@ -19,7 +19,7 @@
                 <div class="hero-bg">
                   <div class="hero-maskgroup">
                     <img src="{{asset('images\home\hero\image 110.png')}}" alt="Rectangle4700126" class="hero-rectangle470" />
-                    {{-- <img src="{{asset('images\home\hero\image 110.png')}}" alt="image1100127" class="hero-image110" /> --}}
+                    
                     <img src="{{asset('images\home\hero\Ellipse 43.png')}}" alt="Ellipse430127" class="hero-ellipse43" />
                   </div>
                 </div>
@@ -58,7 +58,7 @@
         </div>
       </div>
 
-      {{-- Menu Html --}}
+      
       
 
         <div class="menu-container">
@@ -69,7 +69,7 @@
                   <div class="menu-text">
                     <div class="menu-icon">
                       <div class="menu-icon1">
-                        {{-- <img alt="Ellipse420123" src="{{asset('images\home\menu\Ellipse 42.png')}}" class="menu-ellipse421" /> --}}
+                        
                         <img
                           alt="Vector0123"
                           src="{{asset('images\home\menu\icon.png')}}"
@@ -98,7 +98,7 @@
                 <div class="menu-frame1">
                   <div class="menu-text08">
                     <div class="menu-icon1">
-                      {{-- <img alt="Ellipse420123" src="{{asset('images\home\menu\icon.png')}}" class="menu-ellipse421" /> --}}
+                     
                       <img
                         alt="Vector0123"
                         src="{{asset('images\home\menu\icon (1).png')}}"
@@ -126,7 +126,7 @@
                 <div class="menu-frame1">
                   <div class="menu-text16">
                     <div class="menu-icon2">
-                      {{-- <img alt="Ellipse420124" src="." class="menu-ellipse422" /> --}}
+                      
                       <img
                         alt="Vector0124"
                         src="{{asset('images\home\menu\icon (3).png')}}"

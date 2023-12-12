@@ -11,7 +11,7 @@ class Booking extends Model
 
     protected $fillable = ['date', 'time', 'name', 'phone', 'total_person', 'isApproved', 'created_by'];
 
-    // Define any relationships or additional logic here if needed
+    
 
     public function user()
     {

@@ -3,19 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash; // Import Hash class
+use Illuminate\Support\Facades\Hash; 
 use App\Models\User;
 
 class UserController extends Controller
 {
     public function create()
     {
-        return view('registration'); // Replace 'registration' with your view name
+        return view('registration'); 
     }
 
     public function store(Request $request)
     {
-        // Validate incoming request data
+        
         $validatedData = $request->validate([
             'fullname' => 'required',
             'email' => 'required|unique:users,email',
@@ -25,12 +25,12 @@ class UserController extends Controller
             'birthdate' => 'required|date',
         ]);
 
-        // Hash the password
+        
         $validatedData['password'] = Hash::make($request->input('password'));
 
-        // Create a new user using the validated data
+        
         $user = User::create($validatedData);
 
-        return redirect()->route('login'); // Redirect to the named login route
+        return redirect()->route('login'); 
     }
 }
