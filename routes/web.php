@@ -22,7 +22,7 @@ use App\Http\Controllers\AdminController;
 */
 
 Route::get('/', function () {
-    return view('home'); // Replace 'welcome' with the name of your home view
+    return view('home'); 
 })->name('home');
 Route::get('/about', function () {
     return view('about');
@@ -30,9 +30,7 @@ Route::get('/about', function () {
 Route::get('/menu', function () {
     return view('menu'); 
 })->name('menu');
-// Route::get('/booking', function () {
-//     return view('booking');
-// });
+
 Route::get('/registration', function () {
     return view('registration');
 });
