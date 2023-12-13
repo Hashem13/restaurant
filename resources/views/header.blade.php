@@ -130,10 +130,10 @@
                 </div>
                 <div class="links-container">
                   <div class="register-link">
-                      <a href="{{ route('register.create') }}">Register</a>
+                      <a href="{{ route('register.create') }}"><button class="but">Register</button></a>
                   </div>
                   <div class="login-link">
-                      <a href="{{ route('login') }}">Login</a>
+                      <a href="{{ route('login') }}"><button class="but"> Login </button></a>
                   </div>
               </div>
             </div>
